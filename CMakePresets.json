@@ -1,0 +1,18 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "CMakePresets.json",
+            "displayName": "Custom configure preset",
+            "description": "Sets Unix Makefiles generator, build and install directory",
+            "hidden": false,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+                "CMAKE_MAKE_PROGRAM": "D:\\msys64\\usr\\bin\\make.exe"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "D:/agilerobot/build",
+  "command": "D:/msys64/ucrt64/bin/c++.exe   -g -std=gnu++17 -o CMakeFiles/agilerobot.dir/main.cpp.obj -c D:/agilerobot/main.cpp",
+  "file": "D:/agilerobot/main.cpp",
+  "output": "CMakeFiles/agilerobot.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/agilerobot/build",
+  "command": "D:/msys64/ucrt64/bin/c++.exe   -g -std=gnu++17 -o CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp",
+  "file": "D:/agilerobot/source/agileMotorControl.cpp",
+  "output": "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj"
+}
+]
