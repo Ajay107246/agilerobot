@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp
 
-CXX_FLAGS =  -O0 -g -g -std=gnu++17
+CXX_FLAGS = -g -std=gnu++17
 

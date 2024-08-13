@@ -117,7 +117,7 @@ test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_agilerobot.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/test_agilerobot.dir/objects.a
 	D:/msys64/ucrt64/bin/ar.exe qc CMakeFiles/test_agilerobot.dir/objects.a @CMakeFiles/test_agilerobot.dir/objects1.rsp
-	D:/msys64/ucrt64/bin/c++.exe  -O0 -g -g  --coverage --coverage -Wl,--whole-archive CMakeFiles/test_agilerobot.dir/objects.a -Wl,--no-whole-archive -o test_agilerobot.exe -Wl,--out-implib,libtest_agilerobot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/test_agilerobot.dir/linkLibs.rsp
+	D:/msys64/ucrt64/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/test_agilerobot.dir/objects.a -Wl,--no-whole-archive -o test_agilerobot.exe -Wl,--out-implib,libtest_agilerobot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/test_agilerobot.dir/linkLibs.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Running test_agilerobot executable...!"
 	D:/agilerobot/build/test_agilerobot.exe
 

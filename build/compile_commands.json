@@ -1,13 +1,13 @@
 [
 {
   "directory": "D:/agilerobot/build",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp  -O0 -g -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp",
   "file": "D:/agilerobot/source/agileMotorControl.cpp",
   "output": "CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj"
 },
 {
   "directory": "D:/agilerobot/build",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp  -O0 -g -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj -c D:/agilerobot/test/test_agileMotorControl.cpp",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj -c D:/agilerobot/test/test_agileMotorControl.cpp",
   "file": "D:/agilerobot/test/test_agileMotorControl.cpp",
   "output": "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj"
 },

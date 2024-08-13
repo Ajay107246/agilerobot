@@ -17,13 +17,6 @@ FetchContent_Declare(
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
-
-# Add coverage flags
-if(CMAKE_COMPILER_IS_GNUCXX)
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0 -g")#-fprofile-arcs -ftest-coverage")
-  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --coverage")# -fprofile-arcs -ftest-coverage")
-endif()
-
 #file(GLOB SOURCES "source/*.cpp")
 #file(GLOB SOURCES_TEST "test/*.cpp")
 
@@ -34,7 +27,7 @@ add_executable(test_agilerobot source/agileMotorControl.cpp test/test_agileMotor
 #add_subdirectory(test)
 
 target_link_libraries(test_agilerobot gtest_main)
-target_link_options(test_agilerobot PRIVATE --coverage)
+
 add_custom_command(
     TARGET test_agilerobot
     POST_BUILD

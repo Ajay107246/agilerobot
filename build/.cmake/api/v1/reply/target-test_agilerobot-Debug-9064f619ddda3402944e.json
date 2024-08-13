@@ -14,7 +14,6 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_options",
 			"target_link_libraries"
 		],
 		"files" : 
@@ -30,29 +29,23 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 33,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 37,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 36,
+				"line" : 29,
 				"parent" : 0
 			},
 			{
 				"file" : 1
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 1,
 				"line" : 146,
-				"parent" : 4
+				"parent" : 3
 			}
 		]
 	},
@@ -62,18 +55,18 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -O0 -g -g -std=gnu++17"
+					"fragment" : "-g -std=gnu++17"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "D:/agilerobot/build/_deps/googletest-src/googletest/include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "D:/agilerobot/build/_deps/googletest-src/googletest"
 				}
@@ -83,7 +76,7 @@
 			{
 				"backtraces" : 
 				[
-					3
+					2
 				],
 				"standard" : "17"
 			},
@@ -97,12 +90,12 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 3,
-			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+			"backtrace" : 2,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
 		},
 		{
-			"backtrace" : 3,
-			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
 		}
 	],
 	"id" : "test_agilerobot::@6890427a1f51a3e7e1df",
@@ -111,25 +104,20 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O0 -g -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "--coverage",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "--coverage",
-				"role" : "flags"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "lib/libgtest_maind.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 5,
+				"backtrace" : 4,
 				"fragment" : "lib/libgtestd.a",
 				"role" : "libraries"
 			},
