@@ -1,0 +1,2 @@
+D:/msys64/ucrt64/bin/ar.exe qc libtest_agilerobot_lib.a CMakeFiles/test_agilerobot_lib.dir/test_agileMotorControl.cpp.obj
+D:/msys64/ucrt64/bin/ranlib.exe libtest_agilerobot_lib.a
