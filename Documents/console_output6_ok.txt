@@ -1,0 +1,57 @@
+[main] Building folder: D:/agilerobot/build 
+[build] Starting build
+[proc] Executing command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 --
+[build] [  9%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj[0m
+[build] [ 18%] [32m[1mLinking CXX static library ../../../lib/libgtestd.a[0m
+[build] [ 18%] Built target gtest
+[build] [ 27%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj[0m
+[build] [ 36%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj[0m
+[build] [ 45%] [32m[1mLinking CXX static library ../../../lib/libgtest_maind.a[0m
+[build] [ 45%] Built target gtest_main
+[build] [ 54%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj[0m
+[build] [ 63%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj[0m
+[build] [ 72%] [32m[1mLinking CXX static library ../../../lib/libgmockd.a[0m
+[build] [ 72%] Built target gmock
+[build] [ 81%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj[0m
+[build] [ 90%] [32m[1mLinking CXX executable test_agilerobot.exe[0m
+[build] [34m[1mRunning test_agilerobot executable...![0m
+[build] [==========] Running 6 tests from 1 test suite.
+[build] [----------] Global test environment set-up.
+[build] [----------] 6 tests from checkPositionDataTest
+[build] [ RUN      ] checkPositionDataTest.validPositionAndNoError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] motorAngle: 0.0987028
+[build] motorAngle: 0.790868
+[build] [       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.validPositionAndError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] [       OK ] checkPositionDataTest.validPositionAndError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+[build] motorAngle: -3.14
+[build] motorAngle: -1.70258
+[build] motorAngle: 1.17226
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.invalidPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.negativePositionAndWarning
+[build] [       OK ] checkPositionDataTest.negativePositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+[build] motorAngle: -3.14
+[build] motorAngle: -0.644635
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+[build] motorAngle: -3.14
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[build] [----------] 6 tests from checkPositionDataTest (0 ms total)
+[build] 
+[build] [----------] Global test environment tear-down
+[build] [==========] 6 tests from 1 test suite ran. (0 ms total)
+[build] [  PASSED  ] 6 tests.
+[build] [ 90%] Built target test_agilerobot
+[build] [100%] [32m[1mLinking CXX static library ../../../lib/libgmock_maind.a[0m
+[build] [100%] Built target gmock_main
+[driver] Build completed: 00:00:44.430
+[build] Build finished with exit code 0

@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/agilerobot/main.cpp" "CMakeFiles/agilerobot.dir/main.cpp.obj" "gcc" "CMakeFiles/agilerobot.dir/main.cpp.obj.d"
   "D:/agilerobot/source/agileMotorControl.cpp" "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj" "gcc" "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj.d"
   )
 

@@ -95,6 +95,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:/Program Files/CMake/bin/cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:/Program Files/CMake/bin/cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start D:/agilerobot/build/CMakeFiles D:/agilerobot/build//CMakeFiles/progress.marks
@@ -127,48 +172,76 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named agilerobot
+# Target rules for targets named test_agilerobot
 
 # Build rule for target.
-agilerobot: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 agilerobot
-.PHONY : agilerobot
+test_agilerobot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_agilerobot
+.PHONY : test_agilerobot
 
 # fast build rule for target.
-agilerobot/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/build
-.PHONY : agilerobot/fast
+test_agilerobot/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/build
+.PHONY : test_agilerobot/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named gmock
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
 
-main.i: main.cpp.i
-.PHONY : main.i
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
 
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/main.cpp.i
-.PHONY : main.cpp.i
+#=============================================================================
+# Target rules for targets named gmock_main
 
-main.s: main.cpp.s
-.PHONY : main.s
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
 
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 source/agileMotorControl.obj: source/agileMotorControl.cpp.obj
 .PHONY : source/agileMotorControl.obj
 
 # target to build an object file
 source/agileMotorControl.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj
 .PHONY : source/agileMotorControl.cpp.obj
 
 source/agileMotorControl.i: source/agileMotorControl.cpp.i
@@ -176,7 +249,7 @@ source/agileMotorControl.i: source/agileMotorControl.cpp.i
 
 # target to preprocess a source file
 source/agileMotorControl.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.i
 .PHONY : source/agileMotorControl.cpp.i
 
 source/agileMotorControl.s: source/agileMotorControl.cpp.s
@@ -184,8 +257,32 @@ source/agileMotorControl.s: source/agileMotorControl.cpp.s
 
 # target to generate assembly for a file
 source/agileMotorControl.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/agilerobot.dir/build.make CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.s
 .PHONY : source/agileMotorControl.cpp.s
+
+test/test_agileMotorControl.obj: test/test_agileMotorControl.cpp.obj
+.PHONY : test/test_agileMotorControl.obj
+
+# target to build an object file
+test/test_agileMotorControl.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj
+.PHONY : test/test_agileMotorControl.cpp.obj
+
+test/test_agileMotorControl.i: test/test_agileMotorControl.cpp.i
+.PHONY : test/test_agileMotorControl.i
+
+# target to preprocess a source file
+test/test_agileMotorControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.i
+.PHONY : test/test_agileMotorControl.cpp.i
+
+test/test_agileMotorControl.s: test/test_agileMotorControl.cpp.s
+.PHONY : test/test_agileMotorControl.s
+
+# target to generate assembly for a file
+test/test_agileMotorControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_agilerobot.dir/build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.s
+.PHONY : test/test_agileMotorControl.cpp.s
 
 # Help Target
 help:
@@ -194,15 +291,23 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... agilerobot"
-	@echo "... main.obj"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... test_agilerobot"
 	@echo "... source/agileMotorControl.obj"
 	@echo "... source/agileMotorControl.i"
 	@echo "... source/agileMotorControl.s"
+	@echo "... test/test_agileMotorControl.obj"
+	@echo "... test/test_agileMotorControl.i"
+	@echo "... test/test_agileMotorControl.s"
 .PHONY : help
 
 

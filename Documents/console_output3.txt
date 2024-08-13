@@ -1,0 +1,99 @@
+[main] Building folder: D:/agilerobot/build 
+[build] Starting build
+[proc] Executing command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 --
+[build] [  9%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj[0m
+[build] [ 18%] [32m[1mLinking CXX static library ../../../lib/libgtestd.a[0m
+[build] [ 18%] Built target gtest
+[build] [ 27%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj[0m
+[build] [ 36%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj[0m
+[build] [ 45%] [32m[1mLinking CXX static library ../../../lib/libgtest_maind.a[0m
+[build] [ 45%] Built target gtest_main
+[build] [ 54%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj[0m
+[build] [ 63%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj[0m
+[build] [ 72%] [32m[1mLinking CXX static library ../../../lib/libgmockd.a[0m
+[build] In file included from D:/agilerobot/build/_deps/googletest-src/googletest/include/gtest/gtest.h:387,
+[build]                  from D:/agilerobot/test/test_agileMotorControl.cpp:1:
+[build] D:/agilerobot/test/test_agileMotorControl.cpp: In member function 'virtual void checkPositionDataTest_negativePostionAndWarning_Test::TestBody()':
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:6:19: warning: unsigned conversion from 'int' to 'uint16_t' {aka 'short unsigned int'} changes value from '65537' to '1' [-Woverflow]
+[build]     6 | #define OUTOF_POS 65537
+[build]       |                   ^~~~~
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:53:33: note: in expansion of macro 'OUTOF_POS'
+[build]    53 |     EXPECT_EQ(checkPositionData(OUTOF_POS, WARNING), ERROR);
+[build]       |                                 ^~~~~~~~~
+[build] [ 72%] Built target gmock
+[build] [ 81%] [32m[1mLinking CXX executable test_agilerobot.exe[0m
+[build] [ 90%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj[0m
+[build] [34m[1mRunning test_agilerobot executable...![0m
+[build] [==========] Running 6 tests from 1 test suite.
+[build] [----------] Global test environment set-up.
+[build] [----------] 6 tests from checkPositionDataTest
+[build] [ RUN      ] checkPositionDataTest.validPositionAndNoError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] motorAngle: 0.0987028
+[build] motorAngle: 0.790868
+[build] [       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.inValidPositionAndError
+[build] motorAngle: -0.935952
+[build] [       OK ] checkPositionDataTest.inValidPositionAndError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+[build] motorAngle: -3.14
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:43: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID1, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: -1.70258
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:44: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID2, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: 1.17226
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:45: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID3, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: 3.14
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:46: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID4, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] [  FAILED  ] checkPositionDataTest.invalidPositionAndNoError (24 ms)
+[build] [ RUN      ] checkPositionDataTest.negativePostionAndWarning
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:53: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(65537, 2)
+[build]     Which is: '\x2' (2)
+[build]   1
+[build] [  FAILED  ] checkPositionDataTest.negativePostionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+[build] [       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+[build] motorAngle: -3.14
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[build] [----------] 6 tests from checkPositionDataTest (25 ms total)
+[build] 
+[build] [----------] Global test environment tear-down
+[build] [==========] 6 tests from 1 test suite ran. (25 ms total)
+[build] [  PASSED  ] 4 tests.
+[build] [  FAILED  ] 2 tests, listed below:
+[build] [  FAILED  ] checkPositionDataTest.invalidPositionAndNoError
+[build] [  FAILED  ] checkPositionDataTest.negativePostionAndWarning
+[build] 
+[build]  2 FAILED TESTS
+[build] libgcov profiling error:D:\agilerobot\build\CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.gcda:overwriting an existing profile data with a different checksum
+[build] libgcov profiling error:D:\agilerobot\build\CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.gcda:overwriting an existing profile data with a different checksum
+[build] make[2]: *** [CMakeFiles/test_agilerobot.dir/build.make:122: test_agilerobot.exe] Error 1
+[build] make[2]: *** Deleting file 'test_agilerobot.exe'
+[build] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_agilerobot.dir/all] Error 2
+[build] make[1]: *** Waiting for unfinished jobs....
+[build] [100%] [32m[1mLinking CXX static library ../../../lib/libgmock_maind.a[0m
+[build] [100%] Built target gmock_main
+[build] make: *** [Makefile:146: all] Error 2
+[proc] The command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 -- exited with code: 2
+[driver] Build completed: 00:00:41.078
+[build] Build finished with exit code 2

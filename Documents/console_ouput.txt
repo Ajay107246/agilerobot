@@ -1,0 +1,32 @@
+[main] Building folder: D:/agilerobot/build 
+[build] Starting build
+[proc] Executing command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 --
+[build] [  9%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj[0m
+[build] [ 18%] [32m[1mLinking CXX static library ../../../lib/libgtestd.a[0m
+[build] [ 18%] Built target gtest
+[build] [ 36%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj[0m
+[build] [ 36%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj[0m
+[build] [ 45%] [32m[1mLinking CXX static library ../../../lib/libgtest_maind.a[0m
+[build] [ 45%] Built target gtest_main
+[build] [ 63%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj[0m
+[build] [ 63%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj[0m
+[build] [ 72%] [32m[1mLinking CXX static library ../../../lib/libgmockd.a[0m
+[build] [ 81%] [32m[1mLinking CXX executable test_agilerobot.exe[0m
+[build] [ 81%] Built target gmock
+[build] [ 90%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj[0m
+[build] [34m[1mRunning test_agilerobot executable...![0m
+[build] [==========] Running 1 test from 1 test suite.
+[build] [----------] Global test environment set-up.
+[build] [----------] 1 test from checkPositionDataTest
+[build] [ RUN      ] checkPositionDataTest.validPositionAndNoError
+[build] [       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[build] [----------] 1 test from checkPositionDataTest (0 ms total)
+[build] 
+[build] [----------] Global test environment tear-down
+[build] [==========] 1 test from 1 test suite ran. (0 ms total)
+[build] [  PASSED  ] 1 test.
+[build] [ 90%] Built target test_agilerobot
+[build] [100%] [32m[1mLinking CXX static library ../../../lib/libgmock_maind.a[0m
+[build] [100%] Built target gmock_main
+[driver] Build completed: 00:00:32.092
+[build] Build finished with exit code 0

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/agilerobot.dir/main.cpp.obj"
-  "CMakeFiles/agilerobot.dir/main.cpp.obj.d"
   "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj"
   "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj.d"
   "agilerobot.exe"

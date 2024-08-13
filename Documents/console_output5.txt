@@ -1,0 +1,87 @@
+[main] Building folder: D:/agilerobot/build 
+[build] Starting build
+[proc] Executing command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 --
+[build] [  9%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj[0m
+[build] [ 18%] [32m[1mLinking CXX static library ../../../lib/libgtestd.a[0m
+[build] [ 18%] Built target gtest
+[build] [ 27%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj[0m
+[build] [ 36%] [32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj[0m
+[build] [ 45%] [32m[1mLinking CXX static library ../../../lib/libgtest_maind.a[0m
+[build] [ 45%] Built target gtest_main
+[build] [ 54%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj[0m
+[build] [ 63%] [32mBuilding CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj[0m
+[build] [ 72%] [32m[1mLinking CXX static library ../../../lib/libgmockd.a[0m
+[build] [ 72%] Built target gmock
+[build] [ 81%] [32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj[0m
+[build] [ 90%] [32m[1mLinking CXX executable test_agilerobot.exe[0m
+[build] [34m[1mRunning test_agilerobot executable...![0m
+[build] [==========] Running 6 tests from 1 test suite.
+[build] [----------] Global test environment set-up.
+[build] [----------] 6 tests from checkPositionDataTest
+[build] [ RUN      ] checkPositionDataTest.validPositionAndNoError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] motorAngle: 0.0987028
+[build] motorAngle: 0.790868
+[build] [       OK ] checkPositionDataTest.validPositionAndNoError (1 ms)
+[build] [ RUN      ] checkPositionDataTest.validPositionAndError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] [       OK ] checkPositionDataTest.validPositionAndError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+[build] motorAngle: -3.14
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:41: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID1, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: -1.70258
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:42: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID2, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: 1.17226
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:43: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID3, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] motorAngle: 3.14
+[build] D:/agilerobot/test/test_agileMotorControl.cpp:44: Failure
+[build] Expected equality of these values:
+[build]   checkPositionData(POS_INVALID4, 0)
+[build]     Which is: '\x1' (1)
+[build]   0
+[build] [  FAILED  ] checkPositionDataTest.invalidPositionAndNoError (14 ms)
+[build] [ RUN      ] checkPositionDataTest.negativePositionAndWarning
+[build] [       OK ] checkPositionDataTest.negativePositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+[build] motorAngle: -3.14
+[build] motorAngle: -0.644635
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+[build] motorAngle: -3.14
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[build] [----------] 6 tests from checkPositionDataTest (16 ms total)
+[build] 
+[build] [----------] Global test environment tear-down
+[build] [==========] 6 tests from 1 test suite ran. (16 ms total)
+[build] [  PASSED  ] 5 tests.
+[build] [  FAILED  ] 1 test, listed below:
+[build] [  FAILED  ] checkPositionDataTest.invalidPositionAndNoError
+[build] 
+[build]  1 FAILED TEST
+[build] libgcov profiling error:D:\agilerobot\build\CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.gcda:overwriting an existing profile data with a different checksum
+[build] make[2]: *** [CMakeFiles/test_agilerobot.dir/build.make:122: test_agilerobot.exe] Error 1
+[build] make[2]: *** Deleting file 'test_agilerobot.exe'
+[build] make[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_agilerobot.dir/all] Error 2
+[build] make[1]: *** Waiting for unfinished jobs....
+[build] [100%] [32m[1mLinking CXX static library ../../../lib/libgmock_maind.a[0m
+[build] [100%] Built target gmock_main
+[build] make: *** [Makefile:146: all] Error 2
+[proc] The command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 -- exited with code: 2
+[driver] Build completed: 00:01:01.888
+[build] Build finished with exit code 2

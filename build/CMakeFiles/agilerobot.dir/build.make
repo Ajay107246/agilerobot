@@ -69,24 +69,10 @@ include CMakeFiles/agilerobot.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/agilerobot.dir/flags.make
 
-CMakeFiles/agilerobot.dir/main.cpp.obj: CMakeFiles/agilerobot.dir/flags.make
-CMakeFiles/agilerobot.dir/main.cpp.obj: D:/agilerobot/main.cpp
-CMakeFiles/agilerobot.dir/main.cpp.obj: CMakeFiles/agilerobot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/agilerobot.dir/main.cpp.obj"
-	D:/msys64/ucrt64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/agilerobot.dir/main.cpp.obj -MF CMakeFiles/agilerobot.dir/main.cpp.obj.d -o CMakeFiles/agilerobot.dir/main.cpp.obj -c D:/agilerobot/main.cpp
-
-CMakeFiles/agilerobot.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/agilerobot.dir/main.cpp.i"
-	D:/msys64/ucrt64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:/agilerobot/main.cpp > CMakeFiles/agilerobot.dir/main.cpp.i
-
-CMakeFiles/agilerobot.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/agilerobot.dir/main.cpp.s"
-	D:/msys64/ucrt64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:/agilerobot/main.cpp -o CMakeFiles/agilerobot.dir/main.cpp.s
-
 CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj: CMakeFiles/agilerobot.dir/flags.make
 CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj: D:/agilerobot/source/agileMotorControl.cpp
 CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj: CMakeFiles/agilerobot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj"
 	D:/msys64/ucrt64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj -MF CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj.d -o CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp
 
 CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.i: cmake_force
@@ -99,18 +85,16 @@ CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.s: cmake_force
 
 # Object files for target agilerobot
 agilerobot_OBJECTS = \
-"CMakeFiles/agilerobot.dir/main.cpp.obj" \
 "CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj"
 
 # External object files for target agilerobot
 agilerobot_EXTERNAL_OBJECTS =
 
-agilerobot.exe: CMakeFiles/agilerobot.dir/main.cpp.obj
 agilerobot.exe: CMakeFiles/agilerobot.dir/source/agileMotorControl.cpp.obj
 agilerobot.exe: CMakeFiles/agilerobot.dir/build.make
 agilerobot.exe: CMakeFiles/agilerobot.dir/linkLibs.rsp
 agilerobot.exe: CMakeFiles/agilerobot.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable agilerobot.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:/agilerobot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable agilerobot.exe"
 	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/agilerobot.dir/objects.a
 	D:/msys64/ucrt64/bin/ar.exe qc CMakeFiles/agilerobot.dir/objects.a @CMakeFiles/agilerobot.dir/objects1.rsp
 	D:/msys64/ucrt64/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/agilerobot.dir/objects.a -Wl,--no-whole-archive -o agilerobot.exe -Wl,--out-implib,libagilerobot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/agilerobot.dir/linkLibs.rsp
