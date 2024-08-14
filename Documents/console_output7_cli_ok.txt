@@ -1,0 +1,182 @@
+D:\agilerobot>ls
+CMakeLists.txt     Documents  __pycache__  build_and_run.py  main.cpp  test
+CMakePresets.json  README.md  build        header            source
+
+D:\agilerobot>py -m build_and_run
+←[34mrun_command: cmake...
+←[0m
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 17% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 33% complete]
+-- [download 36% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 53% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 90% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- Configuring done (2.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: D:/agilerobot/build
+
+←[34mrun_command: cmake --build .
+←[0m
+[  9%] ←[32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj←[0m
+[ 18%] ←[32m←[1mLinking CXX static library ../../../lib/libgtestd.a←[0m
+[ 18%] Built target gtest
+[ 27%] ←[32mBuilding CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj←[0m
+[ 36%] ←[32m←[1mLinking CXX static library ../../../lib/libgtest_maind.a←[0m
+[ 36%] Built target gtest_main
+[ 45%] ←[32mBuilding CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj←[0m
+[ 54%] ←[32mBuilding CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj←[0m
+[ 63%] ←[32m←[1mLinking CXX executable test_agilerobot.exe←[0m
+←[34m←[1mRunning test_agilerobot executable...!←[0m
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from checkPositionDataTest
+[ RUN      ] checkPositionDataTest.validPositionAndNoError
+motorAngle: -0.935952
+motorAngle: -0.644635
+motorAngle: 0.0987028
+motorAngle: 0.790868
+[       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[ RUN      ] checkPositionDataTest.validPositionAndError
+motorAngle: -0.935952
+motorAngle: -0.644635
+[       OK ] checkPositionDataTest.validPositionAndError (0 ms)
+[ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+motorAngle: -3.14
+motorAngle: -1.70258
+motorAngle: 1.17226
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.invalidPositionAndNoError (0 ms)
+[ RUN      ] checkPositionDataTest.negativePositionAndWarning
+[       OK ] checkPositionDataTest.negativePositionAndWarning (0 ms)
+[ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+motorAngle: -3.14
+motorAngle: -0.644635
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+motorAngle: -3.14
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[----------] 6 tests from checkPositionDataTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+[ 63%] Built target test_agilerobot
+[ 72%] ←[32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj←[0m
+[ 81%] ←[32m←[1mLinking CXX static library ../../../lib/libgmockd.a←[0m
+[ 81%] Built target gmock
+[ 90%] ←[32mBuilding CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj←[0m
+[100%] ←[32m←[1mLinking CXX static library ../../../lib/libgmock_maind.a←[0m
+[100%] Built target gmock_main
+
+←[34mexecute test_agilerobot.exe
+←[0m
+[==========] Running 6 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 6 tests from checkPositionDataTest
+[ RUN      ] checkPositionDataTest.validPositionAndNoError
+motorAngle: -0.935952
+motorAngle: -0.644635
+motorAngle: 0.0987028
+motorAngle: 0.790868
+[       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[ RUN      ] checkPositionDataTest.validPositionAndError
+motorAngle: -0.935952
+motorAngle: -0.644635
+[       OK ] checkPositionDataTest.validPositionAndError (0 ms)
+[ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+motorAngle: -3.14
+motorAngle: -1.70258
+motorAngle: 1.17226
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.invalidPositionAndNoError (0 ms)
+[ RUN      ] checkPositionDataTest.negativePositionAndWarning
+[       OK ] checkPositionDataTest.negativePositionAndWarning (0 ms)
+[ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+motorAngle: -3.14
+motorAngle: -0.644635
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+motorAngle: -3.14
+motorAngle: 3.14
+[       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[----------] 6 tests from checkPositionDataTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 6 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 6 tests.
+
+←[32m!Coverage report generated successfully!
+←[0m
+
+←[32m!build path exist!
+←[0m
+
+D:\agilerobot>

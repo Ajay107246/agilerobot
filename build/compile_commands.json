@@ -1,37 +1,37 @@
 [
 {
   "directory": "D:/agilerobot/build",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp  -O0 -g -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj -c D:/agilerobot/source/agileMotorControl.cpp",
   "file": "D:/agilerobot/source/agileMotorControl.cpp",
   "output": "CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj"
 },
 {
   "directory": "D:/agilerobot/build",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj -c D:/agilerobot/test/test_agileMotorControl.cpp",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp  -O0 -g -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj -c D:/agilerobot/test/test_agileMotorControl.cpp",
   "file": "D:/agilerobot/test/test_agileMotorControl.cpp",
   "output": "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj"
 },
 {
   "directory": "D:/agilerobot/build/_deps/googletest-build/googlemock",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp  -O0 -g -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
 },
 {
   "directory": "D:/agilerobot/build/_deps/googletest-build/googlemock",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gmock_main.dir/includes_CXX.rsp  -O0 -g -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "file": "D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj"
 },
 {
   "directory": "D:/agilerobot/build/_deps/googletest-build/googletest",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gtest.dir/includes_CXX.rsp  -O0 -g -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "file": "D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
 },
 {
   "directory": "D:/agilerobot/build/_deps/googletest-build/googletest",
-  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gtest_main.dir/includes_CXX.rsp  -O0 -g -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "file": "D:/agilerobot/build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
 }

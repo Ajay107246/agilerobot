@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\test_agilerobot.dir/objects.a
+D:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\test_agilerobot.dir/objects.a @CMakeFiles\test_agilerobot.dir\objects1.rsp
+D:\msys64\ucrt64\bin\c++.exe  -O0 -g  --coverage -Wl,--whole-archive CMakeFiles\test_agilerobot.dir/objects.a -Wl,--no-whole-archive -o test_agilerobot.exe -Wl,--out-implib,libtest_agilerobot.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_agilerobot.dir\linkLibs.rsp
