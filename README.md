@@ -1,3 +1,10 @@
+How to run the project:
+1. clone this repository in local directory
+2. navigate to agilerobot directory
+3. simply run the py script to run the project with command:
+**py -m build_and_run**
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
 Introduction: We have a function that checks data received from a position sensor on a rotating motor. This prototype of that function is: 
   **uint8_t checkPositionData(uint16_t positionValue, uint8_t statusFlag);** 
   
