@@ -12,6 +12,12 @@
   "output": "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj"
 },
 {
+  "directory": "D:/agilerobot/build",
+  "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/test_agilerobot.dir/includes_CXX.rsp  -O0 -g -g -std=gnu++17 -o CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj -c D:/agilerobot/test/test_agileMotorControl_funcPtr.cpp",
+  "file": "D:/agilerobot/test/test_agileMotorControl_funcPtr.cpp",
+  "output": "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj"
+},
+{
   "directory": "D:/agilerobot/build/_deps/googletest-build/googlemock",
   "command": "D:/msys64/ucrt64/bin/c++.exe  @CMakeFiles/gmock.dir/includes_CXX.rsp  -O0 -g -g -std=c++17 -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.obj -c D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "file": "D:/agilerobot/build/_deps/googletest-src/googlemock/src/gmock-all.cc",

@@ -1,0 +1,97 @@
+[main] Building folder: D:/agilerobot/build 
+[build] Starting build
+[proc] Executing command: "C:\\Program Files\\CMake\\bin\\cmake.exe" --build D:/agilerobot/build --parallel 6 --
+[build] [  8%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+[build] [ 16%] Linking CXX static library ..\..\..\lib\libgtest.a
+[build] [ 16%] Built target gtest
+[build] [ 25%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj
+[build] [ 33%] Building CXX object _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
+[build] [ 41%] Linking CXX static library ..\..\..\lib\libgtest_main.a
+[build] [ 41%] Built target gtest_main
+[build] [ 50%] Building CXX object CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj
+[build] [ 58%] Building CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj
+[build] [ 66%] Building CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj
+[build] [ 75%] Linking CXX static library ..\..\..\lib\libgmock.a
+[build] [ 75%] Built target gmock
+[build] [ 83%] Building CXX object _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj
+[build] [ 91%] Linking CXX executable test_agilerobot.exe
+[build] Running test_agilerobot executable...!
+[build] [==========] Running 15 tests from 2 test suites.
+[build] [----------] Global test environment set-up.
+[build] [----------] 9 tests from checkPositionDatafuncPtrBlackBoxTest
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxValidPositionAndNoError
+[build] motorAngle: -0.744296
+[build] motorAngle: 0
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxValidPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxValidPositionAndError
+[build] motorAngle: -0.265156
+[build] motorAngle: 0.862452
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxValidPositionAndError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxInvalidPositionAndNoError
+[build] motorAngle: -3.14
+[build] motorAngle: -1.70258
+[build] motorAngle: 1.74723
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxInvalidPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxInvalidPositionAndWarning
+[build] motorAngle: -3.14
+[build] motorAngle: -1.70258
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxInvalidPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxAnyPositionAndWarning
+[build] motorAngle: -3.14
+[build] motorAngle: 0.40564
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxAnyPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackMotorEdgeCasesAndError
+[build] motorAngle: -3.14
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackMotorEdgeCasesAndError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackMotorOutofRangeAndNoError
+[build] motorAngle: 3.04446
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackMotorOutofRangeAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackMotorOutofRangeLowAndNoError
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackMotorOutofRangeLowAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDatafuncPtrBlackBoxTest.blackBoxFunPtrValidPositionAndNoError
+[build] motorAngle: -0.744296
+[build] motorAngle: 0
+[build] [       OK ] checkPositionDatafuncPtrBlackBoxTest.blackBoxFunPtrValidPositionAndNoError (0 ms)
+[build] [----------] 9 tests from checkPositionDatafuncPtrBlackBoxTest (0 ms total)
+[build] 
+[build] [----------] 6 tests from checkPositionDataTest
+[build] [ RUN      ] checkPositionDataTest.validPositionAndNoError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] motorAngle: 0.0987028
+[build] motorAngle: 0.790868
+[build] [       OK ] checkPositionDataTest.validPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.validPositionAndError
+[build] motorAngle: -0.935952
+[build] motorAngle: -0.644635
+[build] [       OK ] checkPositionDataTest.validPositionAndError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndNoError
+[build] motorAngle: -3.14
+[build] motorAngle: -1.70258
+[build] motorAngle: 1.17226
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.invalidPositionAndNoError (0 ms)
+[build] [ RUN      ] checkPositionDataTest.negativePositionAndWarning
+[build] [       OK ] checkPositionDataTest.negativePositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.invalidPositionAndWarning
+[build] motorAngle: -3.14
+[build] motorAngle: -0.644635
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.invalidPositionAndWarning (0 ms)
+[build] [ RUN      ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange
+[build] motorAngle: -3.14
+[build] motorAngle: 3.14
+[build] [       OK ] checkPositionDataTest.ErrorStatusFlagAndMotorOutofRange (0 ms)
+[build] [----------] 6 tests from checkPositionDataTest (0 ms total)
+[build] 
+[build] [----------] Global test environment tear-down
+[build] [==========] 15 tests from 2 test suites ran. (0 ms total)
+[build] [  PASSED  ] 15 tests.
+[build] [ 91%] Built target test_agilerobot
+[build] [100%] Linking CXX static library ..\..\..\lib\libgmock_main.a
+[build] [100%] Built target gmock_main
+[driver] Build completed: 00:00:42.606
+[build] Build finished with exit code 0
+[cpptools] The build configurations generated do not contain the active build configuration. Using "" for CMAKE_BUILD_TYPE instead of "Debug" to ensure that IntelliSense configurations can be found

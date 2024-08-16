@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/agilerobot/source/agileMotorControl.cpp" "CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj" "gcc" "CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj.d"
   "D:/agilerobot/test/test_agileMotorControl.cpp" "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj" "gcc" "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj.d"
+  "D:/agilerobot/test/test_agileMotorControl_funcPtr.cpp" "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj" "gcc" "CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

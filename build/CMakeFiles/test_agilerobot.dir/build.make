@@ -98,23 +98,40 @@ CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.s"
 	D:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\agilerobot\test\test_agileMotorControl.cpp -o CMakeFiles\test_agilerobot.dir\test\test_agileMotorControl.cpp.s
 
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj: CMakeFiles/test_agilerobot.dir/flags.make
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj: CMakeFiles/test_agilerobot.dir/includes_CXX.rsp
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj: D:/agilerobot/test/test_agileMotorControl_funcPtr.cpp
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj: CMakeFiles/test_agilerobot.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\agilerobot\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj"
+	D:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj -MF CMakeFiles\test_agilerobot.dir\test\test_agileMotorControl_funcPtr.cpp.obj.d -o CMakeFiles\test_agilerobot.dir\test\test_agileMotorControl_funcPtr.cpp.obj -c D:\agilerobot\test\test_agileMotorControl_funcPtr.cpp
+
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.i"
+	D:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\agilerobot\test\test_agileMotorControl_funcPtr.cpp > CMakeFiles\test_agilerobot.dir\test\test_agileMotorControl_funcPtr.cpp.i
+
+CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.s"
+	D:\msys64\ucrt64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\agilerobot\test\test_agileMotorControl_funcPtr.cpp -o CMakeFiles\test_agilerobot.dir\test\test_agileMotorControl_funcPtr.cpp.s
+
 # Object files for target test_agilerobot
 test_agilerobot_OBJECTS = \
 "CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj" \
-"CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj"
+"CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj" \
+"CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj"
 
 # External object files for target test_agilerobot
 test_agilerobot_EXTERNAL_OBJECTS =
 
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/source/agileMotorControl.cpp.obj
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.obj
+test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/build.make
-test_agilerobot.exe: lib/libgtest_main.a
-test_agilerobot.exe: lib/libgtest.a
+test_agilerobot.exe: lib/libgtest_maind.a
+test_agilerobot.exe: lib/libgtestd.a
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/linkLibs.rsp
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/objects1.rsp
 test_agilerobot.exe: CMakeFiles/test_agilerobot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\agilerobot\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test_agilerobot.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\agilerobot\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable test_agilerobot.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test_agilerobot.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Running test_agilerobot executable...!"
 	D:\agilerobot\build\test_agilerobot.exe

@@ -5,6 +5,10 @@ project(agilerobot VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Set the build type to Debug
+# Compiler generates debug information & disables optimizations. useful for debugging the code
+set(CMAKE_BUILD_TYPE Debug)
+
 enable_testing()
 
 # Add coverage flags
@@ -29,7 +33,7 @@ FetchContent_MakeAvailable(googletest)
 #add_executable(agilerobot main.cpp ${SOURCES})
 #add_executable(test_agilerobot ${SOURCES} ${SOURCES_TEST})
 
-add_executable(test_agilerobot source/agileMotorControl.cpp test/test_agileMotorControl.cpp)
+add_executable(test_agilerobot source/agileMotorControl.cpp test/test_agileMotorControl.cpp test/test_agileMotorControl_funcPtr.cpp)
 #add_subdirectory(test)
 
 target_link_libraries(test_agilerobot gtest_main)

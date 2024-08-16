@@ -283,6 +283,30 @@ test/test_agileMotorControl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_agilerobot.dir\build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl.cpp.s
 .PHONY : test/test_agileMotorControl.cpp.s
 
+test/test_agileMotorControl_funcPtr.obj: test/test_agileMotorControl_funcPtr.cpp.obj
+.PHONY : test/test_agileMotorControl_funcPtr.obj
+
+# target to build an object file
+test/test_agileMotorControl_funcPtr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_agilerobot.dir\build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.obj
+.PHONY : test/test_agileMotorControl_funcPtr.cpp.obj
+
+test/test_agileMotorControl_funcPtr.i: test/test_agileMotorControl_funcPtr.cpp.i
+.PHONY : test/test_agileMotorControl_funcPtr.i
+
+# target to preprocess a source file
+test/test_agileMotorControl_funcPtr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_agilerobot.dir\build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.i
+.PHONY : test/test_agileMotorControl_funcPtr.cpp.i
+
+test/test_agileMotorControl_funcPtr.s: test/test_agileMotorControl_funcPtr.cpp.s
+.PHONY : test/test_agileMotorControl_funcPtr.s
+
+# target to generate assembly for a file
+test/test_agileMotorControl_funcPtr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test_agilerobot.dir\build.make CMakeFiles/test_agilerobot.dir/test/test_agileMotorControl_funcPtr.cpp.s
+.PHONY : test/test_agileMotorControl_funcPtr.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -307,6 +331,9 @@ help:
 	@echo ... test/test_agileMotorControl.obj
 	@echo ... test/test_agileMotorControl.i
 	@echo ... test/test_agileMotorControl.s
+	@echo ... test/test_agileMotorControl_funcPtr.obj
+	@echo ... test/test_agileMotorControl_funcPtr.i
+	@echo ... test/test_agileMotorControl_funcPtr.s
 .PHONY : help
 
 
